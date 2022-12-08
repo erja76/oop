@@ -10,6 +10,8 @@ public class autooop {
 		System.out.print("Tämä auto on ");
 		olio1.naytaTiedot();		
 		olio1.Kiihdyta();	
+		olio1.Tankkaa(20);
+		olio1.Kiihdyta();
 		olio1.Jarruta();
 	}
 
@@ -45,4 +47,13 @@ class Auto
 	System.out.println(merkki + " " + malli + ", bensaa tankissa " + bensanMaara + ".");
 	}
 
+	public void Tankkaa(int tankattavaMaara) 
+	{
+	System.out.println("Tankissa bensaa: " + bensanMaara);
+	System.out.println("Tankkaus: " + tankattavaMaara);
+	bensanMaara = bensanMaara + tankattavaMaara;
+	System.out.println("Tankissa bensaa tankkauksen jälkeen: " + bensanMaara);
+	}			
+
+	
 }
