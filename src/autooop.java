@@ -16,6 +16,7 @@ public class autooop {
 		olio1.Kiihdyta();		
 
 		Auto olio2 = new Auto("Citroen", "Xsara", 80);	
+		System.out.print("Tämä auto on ");
 		olio2.naytaTiedot();
 		olio1.Kiihdyta();
 		olio2.Kiihdyta();
@@ -60,7 +61,7 @@ class Auto
 
 		public void naytaTiedot() 
 	{
-		System.out.println(merkki + ", " + malli + ", bensaa tankissa " + bensanMaara + ".");
+		System.out.println(merkki + " " + malli + ", bensaa tankissa " + bensanMaara + ".");
 	}
 
 		public void Tankkaa(int tankattavaMaara) 
